@@ -1,0 +1,66 @@
+﻿{% extends "base.html" %}
+{% block content %}
+    <div id="main-container" class="container clearfix">
+        <section class="post-left">
+            <div class="breadcrumb">您的位置： <a itemprop="breadcrumb" href="/">首页</a> » <span class="current">关于我们</span>
+            </div>
+            <div class="post-main clearfix">
+                <h1 class="post-title">关于我</h1>
+                <div class="post-con clearfix">
+                    <div class="article-meta"><span class="item">2018-10-09</span></div>
+                    <article class="article-content">
+                        <p>
+                            1、本网站属于个人学习网站，旨在记录自己的学习路程.</p>
+                        <p>
+                            2、本人能熟练使用Python语言进行编程任务</p>
+                        <p>
+                            3、对前端HTML、JavaScript、css熟悉，了解JQuery、VUE框架（待学）
+                        </p>
+                        <p>
+                            4、熟悉python web编程，能够熟练使用Django框架（作品<a href="http://wbooks.weisapp.top">W书店</a>及本博客）
+                        </p>
+                        <p>
+                            5、会写爬虫（待学）
+                        </p>
+                        <p>
+                            6、熟悉常用的数据结构及算法
+                        </p>
+                        <p>
+                            7、数据库的设计及优化，能够熟练使用mysql，了解MongoDB，redis
+                        </p>
+                        <p>
+                            8、待写
+                        </p>
+                        <p>9、游客若发现博客中内容出现任何错误，劳烦联系本人进行修改，联系方式如右。</p>
+
+
+
+                    </article>
+
+                </div>
+
+            </div>
+            <!-- /文章 -->
+        </section>
+        <!-- /post-left -->
+        <!-- /post-right -->
+        <aside class="post-right hidden-xs">
+            <!-- /关注我们 -->
+            <div class="post-right-item">
+                <h4 class="post-right-title">关注我们</h4>
+                <div class="wid-about">
+                    <p>162博客，一个菜鸡的博客</p>
+                    <img src="{% url 'index' %}static/picture/weixin.jpg" width="160" height="160">
+                </div>
+                <div class="wid-about">
+                    <p><strong>联系方式:</strong></p>
+                    <p>QQ:1415430956</p>
+                    <p>Email：weibw162@163.com</p>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+    <!-- /主体 -->
+    <!-- 底部 -->
+{% endblock %}
